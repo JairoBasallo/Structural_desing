@@ -1,0 +1,253 @@
+﻿<Window x:Name="MainWindows" x:Class="Structural_Desing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Structural_Desing"
+        mc:Ignorable="d"
+        Title="Structural_Desing" Background="#FFB3AFAF" BorderBrush="Black" MinHeight="500" MinWidth="700">
+
+    <DockPanel>
+    <Grid  x:Name="LayoutRoot" Background="White" Width="Auto" Height="Auto" Margin="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0" HorizontalAlignment="Left" LastChildFill="False"  >
+            <Button DockPanel.Dock="Left" Background="White" Padding="1" BorderThickness="0" Margin="1" >
+                <Image Source="E:\c\WpfApp1\WpfApp1\asset\add-file.png"/>
+            </Button>
+        </DockPanel>
+        <Grid Grid.Row="1" HorizontalAlignment="Left" Margin="1,1,1,1" ScrollViewer.HorizontalScrollBarVisibility="Auto" VerticalAlignment="Top" >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220.4"/>
+                <ColumnDefinition Width="59.6"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <DockPanel Grid.Column="0" Margin="1,1,1,1" Grid.Row="0" Height="auto" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Left" LastChildFill="False">
+                <TabControl DockPanel.Dock="Left" BorderBrush="Black" Margin="1" Height="auto" VerticalContentAlignment="Top">
+                    <TabItem Header="Datos de entrada" Width="120" HorizontalAlignment="Left" FontWeight="Bold" BorderThickness="2" Margin="0" Foreground="Black" BorderBrush="Black" Background="#FFE4E0E0" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" VerticalAlignment="Top" HorizontalAlignment="Center">
+                            <Grid HorizontalAlignment="Left">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="125"/>
+                                    <ColumnDefinition Width="125"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Content="Datos de entrada" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+
+                                <Separator Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="14" Height="3" Background="Black"/>
+
+                                <Button   Content="Cargar solicitaciones" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Width="150" Height="30">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border CornerRadius="10" Background="Silver" BorderThickness="1" BorderBrush="Black">
+                                                <ContentPresenter Content="Cargar solicitaciones" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                                                </ContentPresenter>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+
+                                <Grid Grid.Row="3" Grid.ColumnSpan="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="125"/>
+                                        <ColumnDefinition Width="125"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="Unidades:" Grid.Column="0" HorizontalAlignment="Center"/>
+                                    <Label Content="xx" Grid.Column="1" HorizontalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="4" Grid.ColumnSpan="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="125"/>
+                                        <ColumnDefinition Width="125"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="Archivo:" Grid.Column="0" HorizontalAlignment="Center"/>
+                                    <Label Content="xx" Grid.Column="1" HorizontalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="5" Grid.ColumnSpan="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="125"/>
+                                        <ColumnDefinition Width="125"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="# de muros:" Grid.Column="0" HorizontalAlignment="Center"/>
+                                    <Label Content="xx" Grid.Column="1" HorizontalAlignment="Center"/>
+                                </Grid>
+
+                                <Grid Grid.Row="6" Grid.ColumnSpan="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="125"/>
+                                        <ColumnDefinition Width="125"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="Sistema:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"/>
+                                    <ComboBox Grid.Column="1" Width="100" Height="20" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Normal" FontSize="10">
+                                        <ComboBoxItem>1</ComboBoxItem>
+                                        <ComboBoxItem IsSelected="True">2</ComboBoxItem>
+                                        <ComboBoxItem>3</ComboBoxItem>
+                                    </ComboBox>
+                                </Grid>
+
+                                <Grid Grid.Row="7" Grid.ColumnSpan="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="125"/>
+                                        <ColumnDefinition Width="125"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="Tipo de ladrillo:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"/>
+                                    <ComboBox Grid.Row="1" Height="20" Grid.Column="1" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Normal" FontSize="10">
+                                        <ComboBoxItem>1</ComboBoxItem>
+                                        <ComboBoxItem IsSelected="True">2</ComboBoxItem>
+                                        <ComboBoxItem>3</ComboBoxItem>
+                                    </ComboBox>
+                                </Grid>
+
+                                <Grid Grid.Row="8" Grid.ColumnSpan="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="125"/>
+                                        <ColumnDefinition Width="125"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="f'm:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"/>
+                                    <TextBox Grid.Column="1" Width="100" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Normal" FontSize="10"/>
+                                </Grid>
+
+                                <Grid Grid.Row="9" Grid.ColumnSpan="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="125"/>
+                                        <ColumnDefinition Width="125"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="fy:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBox Grid.Column="1" Width="100" Height="20" FontWeight="Normal" FontSize="11"/>
+                                </Grid>
+
+                                <Separator Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Background="Black"/>
+
+                                <RadioButton GroupName="cant wall" Content="Diseñar todos los muros" HorizontalAlignment="Stretch" Margin="16,10,0,0" Grid.Row="11" Grid.ColumnSpan="2" VerticalAlignment="Top" VerticalContentAlignment="Top" Height="20"/>
+                                <RadioButton GroupName="cant wall" Content="Diseñar un muro especifico" HorizontalAlignment="Left" Margin="16,10,0,0" Grid.Row="12" Grid.ColumnSpan="2" VerticalAlignment="Top" Height="20" />
+
+
+
+                                <Grid Grid.Row="13" Grid.ColumnSpan="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="125"/>
+                                        <ColumnDefinition Width="125"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="Wall Id:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"/>
+                                    <ComboBox Grid.Row="1" Height="20" Grid.Column="1" Width="100" FontWeight="Normal" HorizontalContentAlignment="Center" FontSize="10">
+                                        <ComboBoxItem>1</ComboBoxItem>
+                                        <ComboBoxItem IsSelected="True">2</ComboBoxItem>
+                                        <ComboBoxItem>3</ComboBoxItem>
+                                    </ComboBox>
+                                </Grid>
+
+                                <Grid Grid.Row="14" Grid.ColumnSpan="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="125"/>
+                                        <ColumnDefinition Width="125"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="# de celdas" Grid.Column="0" HorizontalAlignment="Center"/>
+                                    <Label Content="xx" Grid.Column="1" HorizontalAlignment="Center"/>
+                                </Grid>
+
+                                <Button   Content="Dovelas" Grid.Row="15" Grid.Column="0" Grid.ColumnSpan="2" Width="150" Height="30">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border CornerRadius="10" Background="Silver" BorderThickness="1" BorderBrush="Black">
+                                                <ContentPresenter Content="Cargar solicitaciones" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                                                </ContentPresenter>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+
+                                <Grid Grid.Row="16" Grid.ColumnSpan="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="125"/>
+                                        <ColumnDefinition Width="125"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="Refuerzo a corte" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"/>
+                                    <ComboBox Grid.Row="1" Height="20" Grid.Column="1" Width="100" FontWeight="Normal" HorizontalContentAlignment="Center" FontSize="10">
+                                        <ComboBoxItem>1</ComboBoxItem>
+                                        <ComboBoxItem IsSelected="True">2</ComboBoxItem>
+                                        <ComboBoxItem>3</ComboBoxItem>
+                                    </ComboBox>
+                                </Grid>
+
+                                <Grid Grid.Row="17" Grid.ColumnSpan="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="125"/>
+                                        <ColumnDefinition Width="125"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Content="separacion a corte" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"/>
+                                    <ComboBox Grid.Row="1" Height="20" Grid.Column="1" Width="100" FontWeight="Normal" HorizontalContentAlignment="Center" FontSize="10">
+                                        <ComboBoxItem>1</ComboBoxItem>
+                                        <ComboBoxItem IsSelected="True">2</ComboBoxItem>
+                                        <ComboBoxItem>3</ComboBoxItem>
+                                    </ComboBox>
+                                </Grid>
+
+                                <Separator Grid.Row="18" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="14" Height="3" Background="Black"/>
+
+                                <Button   Content="Calcular" Grid.Row="19" Grid.Column="0" Grid.ColumnSpan="2" Width="150" Height="30">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border CornerRadius="10" Background="Silver" BorderThickness="1" BorderBrush="Black">
+                                                <ContentPresenter Content="Cargar solicitaciones" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                                                </ContentPresenter>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+
+                                    <DockPanel Grid.Row="19" >
+                                        
+                                    </DockPanel>
+
+
+
+
+
+
+
+                            </Grid>
+
+                        </ScrollViewer>
+                    </TabItem>
+                    <TabItem Header="Longuitud de muros" Width="120">
+                    </TabItem>
+                </TabControl>
+            </DockPanel>
+
+
+        </Grid>
+
+    </Grid>
+    </DockPanel>
+
+</Window>
